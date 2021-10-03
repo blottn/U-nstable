@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Props/Rod.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Props/CoreRoom.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Props/OneTrough.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Game.gd" type="Script" id=4]
+[ext_resource path="res://Props/OneFuel.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Props/Podium.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Game.tres" type="Environment" id=7]
+
+[node name="Game" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="CoreRoom" parent="." instance=ExtResource( 2 )]
+transform = Transform( 2.70932, 0, 0, 0, 2.70932, 0, 0, 0, 2.70932, 0, 0, 0 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.707107, -0.482246, 0.517145, 0, 0.731354, 0.681999, -0.707107, -0.482246, 0.517145, 6.021, 13.277, 6.021 )
+environment = ExtResource( 7 )
+fov = 68.0
+
+[node name="Rod" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0459, 2.72366, -1.06764 )
+
+[node name="WaterTroughs" type="Spatial" parent="."]
+transform = Transform( 0.985482, 0, 0.16978, 0, 1, 0, -0.16978, 0, 0.985482, -0.326236, 1.29182, -8.58222 )
+
+[node name="Trough" parent="WaterTroughs" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.42405, 0, -0.053874 )
+
+[node name="Trough3" parent="WaterTroughs" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.44583, 0, 0.0683746 )
+
+[node name="FuelTroughs" type="Spatial" parent="."]
+transform = Transform( 0.993387, 0, -0.114816, 0, 1, 0, 0.114816, 0, 0.993387, -7.10481, 1.29434, -0.727138 )
+
+[node name="FuelTrough" parent="FuelTroughs" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0240445, 0, 2.29577 )
+
+[node name="FuelTrough3" parent="FuelTroughs" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0236454, 0, -2.28914 )
+
+[node name="Podium" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.428363, 0, 0, 0, 0.682427, 0, 0, 0, 0.428363, -1.96829, 0.500373, -1.1346 )
+
+[node name="Podium2" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.428363, 0, 0, 0, 0.682427, 0, 0, 0, 0.428363, -1.96829, 0.500373, -1.1346 )
+
+[node name="Podium3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.428363, 0, 0, 0, 0.682427, 0, 0, 0, 0.428363, -1.96829, 0.500373, -1.1346 )
+
+[node name="Podium4" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.428363, 0, 0, 0, 0.682427, 0, 0, 0, 0.428363, -1.96829, 0.500373, -1.1346 )
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 0.653927, -0.702415, 0.281058, 0.0503704, 0.411093, 0.910201, -0.754879, -0.581047, 0.304206, 0.970782, 17.9112, 0.911542 )
+spot_range = 32.4234
+spot_attenuation = 3.4822

@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/CONCRETE_NIMBUS_PZA1_RGB-1000x1000.jpg-08f6a0887cd88f54057280d5ba5ad4ad.s3tc.stex"
+path.etc2="res://.import/CONCRETE_NIMBUS_PZA1_RGB-1000x1000.jpg-08f6a0887cd88f54057280d5ba5ad4ad.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://Images/CONCRETE_NIMBUS_PZA1_RGB-1000x1000.jpg"
+dest_files=[ "res://.import/CONCRETE_NIMBUS_PZA1_RGB-1000x1000.jpg-08f6a0887cd88f54057280d5ba5ad4ad.s3tc.stex", "res://.import/CONCRETE_NIMBUS_PZA1_RGB-1000x1000.jpg-08f6a0887cd88f54057280d5ba5ad4ad.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=1
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
